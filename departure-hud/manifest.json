@@ -1,0 +1,41 @@
+{
+  "id": "departure-hud",
+  "name": "Departure HUD",
+  "version": "0.1.0",
+  "minNoctaliaVersion": "4.6.6",
+  "author": "Умеджон Базаров",
+  "license": "MIT",
+  "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+  "description": "A retro-terminal SysMon desktop widget in Departure Mono — live CPU per-core, memory, thermals, battery, disks, network, brightness, audio, with a wireframe-sphere scope and a pitch-indicator readout.",
+  "tags": ["Desktop", "System", "Indicator"],
+  "screenshots": ["preview.png"],
+  "entryPoints": {
+    "main": "Main.qml",
+    "desktopWidget": "DesktopWidget.qml",
+    "desktopWidgetSettings": "DesktopWidgetSettings.qml",
+    "settings": "Settings.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {
+      "scale": 1.0,
+      "useBackground": true,
+      "useThemeColor": false,
+      "accentColor": "#f08a28",
+      "hotColor": "#ff5a3c",
+      "bgColor": "#0d0d0d",
+      "updateMs": 1000,
+      "disksToShow": "/,/home",
+      "netInterface": "",
+      "netMode": "sum",
+      "cpuMaxTemp": 90,
+      "gpuMaxTemp": 85,
+      "ssdMaxTemp": 65,
+      "showScope": true,
+      "starCount": 30,
+      "gpuScriptPath": "~/.local/bin/gpuinfo.sh"
+    }
+  }
+}
